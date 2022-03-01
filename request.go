@@ -614,11 +614,15 @@ func (r *Request) write(w io.Writer, usingProxy bool, extraHeaders Header, waitF
 	}
 
 	if _, ok := r.Header["Host"]; !ok {
-		r.Header.Set("Host", host)
+		if _, ok := r.Header["host"]; !ok {
+			r.Header.Set("Host", host)
+		}
 	}
 
 	if _, ok := r.Header["User-Agent"]; !ok {
-		r.Header.Set("User-Agent", "Go-http-client/1.1")
+		if _, ok := r.Header["user-agent"]; !ok {
+			r.Header.Set("User-Agent", "Go-http-client/1.1")
+		}
 	}
 
 	// Process Body,ContentLength,Close,Trailer
