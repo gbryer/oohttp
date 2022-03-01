@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ooni/oohttp"
+	"github.com/gbryer/oohttp"
 )
 
 var sizeTests = []struct {

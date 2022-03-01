@@ -24,9 +24,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ooni/oohttp"
-	"github.com/ooni/oohttp/httptest"
-	"github.com/ooni/oohttp/internal/ascii"
+	"github.com/gbryer/oohttp"
+	"github.com/gbryer/oohttp/httptest"
+	"github.com/gbryer/oohttp/internal/ascii"
 )
 
 const fakeHopHeader = "X-Fake-Hop-Header-For-Test"

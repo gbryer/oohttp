@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/ooni/oohttp"
-	"github.com/ooni/oohttp/cookiejar"
-	"github.com/ooni/oohttp/httptest"
+	. "github.com/gbryer/oohttp"
+	"github.com/gbryer/oohttp/cookiejar"
+	"github.com/gbryer/oohttp/httptest"
 )
 
 var robotsTxtHandler = HandlerFunc(func(w ResponseWriter, r *Request) {

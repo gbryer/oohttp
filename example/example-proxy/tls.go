@@ -5,7 +5,7 @@ import (
 	"crypto/tls"
 	"net"
 
-	oohttp "github.com/ooni/oohttp"
+	oohttp "github.com/gbryer/oohttp"
 	utls "github.com/refraction-networking/utls"
 )
 

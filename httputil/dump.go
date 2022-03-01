@@ -15,7 +15,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ooni/oohttp"
+	"github.com/gbryer/oohttp"
 )
 
 // drainBody reads all of b to memory and then returns two equivalent

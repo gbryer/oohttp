@@ -8,7 +8,7 @@ import (
 	"sync"
 	"testing"
 
-	oohttp "github.com/ooni/oohttp"
+	oohttp "github.com/gbryer/oohttp"
 )
 
 // tlsDialerRecorder performs TLS dials and records the ALPN.

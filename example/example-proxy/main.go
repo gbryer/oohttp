@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/armon/go-socks5"
-	oohttp "github.com/ooni/oohttp"
+	oohttp "github.com/gbryer/oohttp"
 )
 
 // startProxyServer starts a SOCKS5 proxy server at the given endpoint.

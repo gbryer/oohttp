@@ -482,6 +482,9 @@ type response struct {
 	// non-nil. Make this lazily-created again as it used to be?
 	closeNotifyCh  chan bool
 	didCloseNotify int32 // atomic (only 0->1 winner should send)
+
+	// Option for opt-in sorting headers by defined order in a special header.
+	enableOrderHeaders bool
 }
 
 // TrailerPrefix is a magic prefix for ResponseWriter.Header map keys
@@ -1110,6 +1113,9 @@ func relevantCaller() runtime.Frame {
 }
 
 func (w *response) WriteHeader(code int) {
+	if _, ok := w.handlerHeader[HeaderOrderKey]; ok && !w.enableOrderHeaders {
+		delete(w.handlerHeader, HeaderOrderKey)
+	}
 	if w.conn.hijacked() {
 		caller := relevantCaller()
 		w.conn.server.logf("http: response.WriteHeader on hijacked connection from %s (%s:%d)", caller.Function, path.Base(caller.File), caller.Line)
@@ -3557,6 +3563,16 @@ func strSliceContains(ss []string, s string) bool {
 		}
 	}
 	return false
+}
+
+// EnableHeaderOrder set the option to enable the ResponseWriter to use the
+// HeaderOrderKey in its headers, for sorting them.
+func EnableHeaderOrder(writer ResponseWriter) ResponseWriter {
+	if res, ok := writer.(*response); ok {
+		res.enableOrderHeaders = true
+		return res
+	}
+	return writer
 }
 
 // tlsRecordHeaderLooksLikeHTTP reports whether a TLS record header

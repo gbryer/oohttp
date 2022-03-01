@@ -19,7 +19,7 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/ooni/oohttp"
+	"github.com/gbryer/oohttp"
 )
 
 // hello world, the web server

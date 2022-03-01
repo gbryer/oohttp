@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	oohttp "github.com/ooni/oohttp"
+	oohttp "github.com/gbryer/oohttp"
 )
 
 // newTransport returns a new http.Transport using the provided tls dialer.

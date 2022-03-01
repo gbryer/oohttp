@@ -15,7 +15,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ooni/oohttp"
+	"github.com/gbryer/oohttp"
 )
 
 var quietLog = log.New(io.Discard, "", 0)

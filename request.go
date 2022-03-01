@@ -25,8 +25,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ooni/oohttp/httptrace"
-	"github.com/ooni/oohttp/internal/ascii"
+	"github.com/gbryer/oohttp/httptrace"
+	"github.com/gbryer/oohttp/internal/ascii"
 	"golang.org/x/net/idna"
 )
 

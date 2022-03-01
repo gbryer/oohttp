@@ -9,7 +9,7 @@ package httputil
 import (
 	"io"
 
-	"github.com/ooni/oohttp/internal"
+	"github.com/gbryer/oohttp/internal"
 )
 
 // NewChunkedReader returns a new chunkedReader that translates the data read from r

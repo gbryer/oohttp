@@ -1,8 +1,8 @@
-module github.com/ooni/oohttp/example/example-utls
+module github.com/gbryer/oohttp/example/example-utls
 
 go 1.17
 
-require github.com/ooni/oohttp v0.0.0-20220118105206-f9b4e3638d0a
+require github.com/gbryer/oohttp v0.0.0-20220118105206-f9b4e3638d0a
 
 require (
 	github.com/refraction-networking/utls v1.0.0

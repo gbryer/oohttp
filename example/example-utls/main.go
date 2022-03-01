@@ -9,7 +9,7 @@ import (
 	"net"
 	"net/http"
 
-	oohttp "github.com/ooni/oohttp"
+	oohttp "github.com/gbryer/oohttp"
 )
 
 // newClient creates a new http.Client using the given transport.

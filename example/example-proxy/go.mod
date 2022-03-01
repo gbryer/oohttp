@@ -1,10 +1,10 @@
-module github.com/ooni/oohttp/example/example-proxy
+module github.com/gbryer/oohttp/example/example-proxy
 
 go 1.17
 
 require (
 	github.com/armon/go-socks5 v0.0.0-20160902184237-e75332964ef5
-	github.com/ooni/oohttp v0.0.0-20220118105206-f9b4e3638d0a
+	github.com/gbryer/oohttp v0.0.0-20220118105206-f9b4e3638d0a
 	github.com/refraction-networking/utls v1.0.0
 )
 

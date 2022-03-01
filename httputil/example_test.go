@@ -11,9 +11,9 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/ooni/oohttp"
-	"github.com/ooni/oohttp/httptest"
-	"github.com/ooni/oohttp/httputil"
+	"github.com/gbryer/oohttp"
+	"github.com/gbryer/oohttp/httptest"
+	"github.com/gbryer/oohttp/httputil"
 )
 
 func ExampleDumpRequest() {

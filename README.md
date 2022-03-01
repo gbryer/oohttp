@@ -1,4 +1,4 @@
-# github.com/ooni/oohttp
+# github.com/gbryer/oohttp
 
 This repository contains a fork of Go's standard library `net/http`
 package including patches to allow using this HTTP code with
@@ -53,7 +53,7 @@ import "net/http"
 with
 
 ```Go
-import "github.com/ooni/oohttp"
+import "github.com/gbryer/oohttp"
 ```
 
 everywhere in your codebase.
@@ -201,16 +201,16 @@ repository. Make sure you mention `oohttp` in the issue title.
 ## Patches
 
 We started from the `src/net/http` subtree at `go1.16` and we
-applied patches to fork the codebase ([#1](https://github.com/ooni/oohttp/pull/1),
-[#2](https://github.com/ooni/oohttp/pull/2) and [#3](
-https://github.com/ooni/oohttp/pull/3)). Then, we introduced
+applied patches to fork the codebase ([#1](https://github.com/gbryer/oohttp/pull/1),
+[#2](https://github.com/gbryer/oohttp/pull/2) and [#3](
+https://github.com/gbryer/oohttp/pull/3)). Then, we introduced
 the `http.TLSConn` abstraction that allows using different TLS
-libraries ([#4](https://github.com/ooni/oohttp/pull/4)). We
-added the `StdlibTransport` wrapped in [#8](https://github.com/ooni/oohttp/pull/8).
-and [#9](https://github.com/ooni/oohttp/pull/9). We added support
-for `TLSClientFactory` in [#16](https://github.com/ooni/oohttp/pull/16),
-[#19](https://github.com/ooni/oohttp/pull/19), and
-[#22](https://github.com/ooni/oohttp/pull/22).
+libraries ([#4](https://github.com/gbryer/oohttp/pull/4)). We
+added the `StdlibTransport` wrapped in [#8](https://github.com/gbryer/oohttp/pull/8).
+and [#9](https://github.com/gbryer/oohttp/pull/9). We added support
+for `TLSClientFactory` in [#16](https://github.com/gbryer/oohttp/pull/16),
+[#19](https://github.com/gbryer/oohttp/pull/19), and
+[#22](https://github.com/gbryer/oohttp/pull/22).
 
 Every major change is documented by a pull request. We may push
 minor changes (e.g., updating docs) directly on the `main` branch.

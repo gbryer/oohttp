@@ -12,7 +12,7 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/ooni/oohttp"
+	"github.com/gbryer/oohttp"
 )
 
 func ExampleHijacker() {

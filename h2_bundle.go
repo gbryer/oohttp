@@ -47,7 +47,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ooni/oohttp/httptrace"
+	"github.com/gbryer/oohttp/httptrace"
 	"golang.org/x/net/http/httpguts"
 	"golang.org/x/net/http2/hpack"
 	"golang.org/x/net/idna"

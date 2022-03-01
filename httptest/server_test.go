@@ -10,7 +10,7 @@ import (
 	"net"
 	"testing"
 
-	"github.com/ooni/oohttp"
+	"github.com/gbryer/oohttp"
 )
 
 type newServerFunc func(http.Handler) *Server

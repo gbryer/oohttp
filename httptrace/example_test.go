@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/ooni/oohttp"
-	"github.com/ooni/oohttp/httptrace"
+	"github.com/gbryer/oohttp"
+	"github.com/gbryer/oohttp/httptrace"
 )
 
 func Example() {

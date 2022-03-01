@@ -18,8 +18,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ooni/oohttp"
-	"github.com/ooni/oohttp/internal/ascii"
+	"github.com/gbryer/oohttp"
+	"github.com/gbryer/oohttp/internal/ascii"
 	"golang.org/x/net/http/httpguts"
 )
 
