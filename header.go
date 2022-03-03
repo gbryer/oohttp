@@ -39,7 +39,7 @@ const HeaderOrderKey = "Header-Order:"
 // PHeaderOrderKey is a magic Key for setting http2 pseudo header order.
 // If the header is nil it will use regular GoLang header order.
 // Valid fields are :authority, :method, :path, :scheme
-//const PHeaderOrderKey = "PHeader-Order:"
+const PHeaderOrderKey = "PHeader-Order:"
 
 // Add adds the key, value pair to the header.
 // It appends to any existing values associated with key.
@@ -262,7 +262,7 @@ func (h Header) writeSubset(w io.Writer, exclude map[string]bool, trace *httptra
 		}
 		mutex.Lock()
 		exclude[HeaderOrderKey] = true
-		//exclude[PHeaderOrderKey] = true
+		exclude[PHeaderOrderKey] = true
 		mutex.Unlock()
 		kvs, sorter = h.sortedKeyValuesBy(order, exclude)
 	} else {
